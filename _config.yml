@@ -3,8 +3,8 @@
 name: "hcc-oss"
 title: HCP OSS 페이지
 description: OSS 적용 가이드를 위한 페이지
-logo: 'assets/images/hcp-oss-logo.png'
-favicon: 'assets/images/hcp-oss-logo.png'
+logo: 'assets/images/hcp-oss-page-logo.png'
+favicon: 'assets/images/hcp-oss-page-logo.png'
 baseurl: /
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
