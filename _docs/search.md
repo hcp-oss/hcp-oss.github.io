@@ -1,5 +1,6 @@
 ---
 title: Search
+layout: docsDefault
 nav_order: 7
 ---
 

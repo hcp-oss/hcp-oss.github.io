@@ -3,6 +3,7 @@ layout: page
 title: Mediumish Template for Jekyll
 permalink: /about
 comments: true
+nav_exclude: true
 ---
 
 <div class="row justify-content-between">

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+nav_exclude: true
 ---
 
 {% if page.url == "/" %}
@@ -49,6 +50,28 @@ title: Home
     </div>
 
 </section>
+
+
+<!-- Posts Index
+================================================== -->
+<section class="docs">
+
+    <div class="section-title">
+
+        <h2><span>Docs</span></h2>
+
+    </div>
+    <main>
+        {{ content }}
+
+        {% if page.has_toc != false %}
+          {% include components/children_nav.html %}
+        {% endif %}
+      </main>
+
+</section>
+
+
 
 <!-- Pagination
 ================================================== -->
