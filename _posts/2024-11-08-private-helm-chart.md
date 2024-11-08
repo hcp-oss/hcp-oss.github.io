@@ -127,7 +127,7 @@ echo $PACKAGED_FILE_NAME
 # helm push
 helm push $PACKAGED_FILE_NAME $REPOSITORY_URL
 ```
-![](assets/images/2024-11-08-private-helm-chart/chart_push_result.png)
+![]({{ site.baseurl }}/assets/images/2024-11-08-private-helm-chart/chart_push_result.png)
 
 ## 4.2. Chart가 의존성이 있는 경우
 - 우선 `Chart.yaml`에서 `dependeny`의 URL을 private repository 주소로 변경해야 한다.

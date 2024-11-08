@@ -98,4 +98,4 @@ echo "모든 이미지를 private registry로 업로드 완료!"
 ```
 
 4. 결과 확인
-![](assets/images/2024-11-08-private-container-registry/container_image_upload_result.png)
+![]({{ site.baseurl }}/assets/images/2024-11-08-private-container-registry/container_image_upload_result.png)
