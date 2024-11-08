@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "private container image사용"
+title:  "1. Private Container Registry사용"
 nav_exclude: true
 author: kyehuijun
 categories: [ OSS ]
@@ -27,6 +27,7 @@ rating: 0.0
 - https://podman.io/docs/installation
 
 1. `images.txt`파일 생성 후 image 목록 작성
+
 ```bash
 # images.txt 예시
 docker.io/library/nginx:latest
@@ -35,6 +36,7 @@ docker.io/library/redis:latest
 ```
 
 2. `imagePullPush.sh`파일 생성 후 하기 내용 작성
+
 ```bash
 #!/bin/bash
 
@@ -42,7 +44,7 @@ docker.io/library/redis:latest
 IMAGE_LIST_FILE="images.txt" # Image 목록이 저장된 파일 이름
 PRIVATE_REGISTRY= {{PriavteRegistryUrl}}    # private registry 주소
 REGISTRY_USER= {{PriavteRegistryUser}}   # registry 사용자명
-REGISTRY_PASS= {{PriavteRegistryPassword}}   # registry 비밀번호 (보안을 위해 환경 변수로 설정하는 것을 추천)
+REGISTRY_PASS= {{PriavteRegistryPassword}}   # registry 비밀번호 
 
 # Private registry 로그인
 echo "Private registry에 로그인 중..."
@@ -87,7 +89,7 @@ done
 
 echo "모든 이미지를 private registry로 업로드 완료!"
 ```
-> 인증서 오류가 발생할 경우 login, pull, push 명령어에 
+> 인증서 오류가 발생할 경우 login, pull, push 명령어에 `--tls-verify=false`을 추가한다.
 
 3. `ImagePullPush.sh`파일 실행
 
@@ -96,4 +98,4 @@ echo "모든 이미지를 private registry로 업로드 완료!"
 ```
 
 4. 결과 확인
-![](assets/images/container_image_upload_result.png)
+![](assets/images/2024-11-08-private-container-registry/container_image_upload_result.png)
