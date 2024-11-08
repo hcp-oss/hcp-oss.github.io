@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2. private Helm Chart Repository사용"
+title:  "2. private Helm Chart Repository 사용하기"
 nav_exclude: true
 author: kyehuijun
 categories: [ OSS ]

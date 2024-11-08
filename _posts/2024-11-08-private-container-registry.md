@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "1. Private Container Registry사용"
+title:  "1. Private Container Registry 사용하기"
 nav_exclude: true
 author: kyehuijun
 categories: [ OSS ]
