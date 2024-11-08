@@ -127,6 +127,9 @@ echo $PACKAGED_FILE_NAME
 # helm push
 helm push $PACKAGED_FILE_NAME $REPOSITORY_URL
 ```
+
+- 결과 확인
+
 ![]({{ site.baseurl }}/assets/images/2024-11-08-private-helm-chart/chart_push_result.png)
 
 ## 4.2. Chart가 의존성이 있는 경우
